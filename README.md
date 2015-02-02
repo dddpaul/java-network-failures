@@ -23,3 +23,27 @@ Block all traffic to port 54321:
 ```java
 IpTables.drop( 54321 );
 ```
+
+## Maven usage
+
+Add following to your pom.xml:
+```xml
+<repositories>
+    <repository>
+        <id>dddpaul</id>
+        <url>http://dl.bintray.com/dddpaul/maven</url>
+    </repository>
+    <repository>
+        <id>jcenter</id>
+        <url>http://jcenter.bintray.com</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.dddpaul</groupId>
+        <artifactId>network-failures</artifactId>
+        <version>1.0</version>
+    </dependency>
+</dependencies>
+```
