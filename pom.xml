@@ -5,7 +5,7 @@
 
     <groupId>com.github.dddpaul</groupId>
     <artifactId>network-failures</artifactId>
-    <version>1.0</version>
+    <version>1.01</version>
 
     <repositories>
         <repository>
@@ -43,7 +43,7 @@
         <dependency>
             <groupId>com.github.dddpaul</groupId>
             <artifactId>network-listeners</artifactId>
-            <version>1.0</version>
+            <version>1.01</version>
         </dependency>
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

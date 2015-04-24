@@ -1,3 +1,5 @@
+package com.github.dddpaul;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -36,7 +38,7 @@ public class Bane
 
     public static Process bane( final int port, Responder responder ) throws IOException, InterruptedException
     {
-        if( !Listeners.isAvailable( port ) ) {
+        if( !Listeners.isAvailable(port) ) {
             return null;
         }
         List<String> cmd = Arrays.asList( "bane", String.valueOf( port ), responder.toString() );
