@@ -5,7 +5,7 @@
 
     <groupId>com.github.dddpaul</groupId>
     <artifactId>network-failures</artifactId>
-    <version>1.01</version>
+    <version>1.1</version>
 
     <repositories>
         <repository>
