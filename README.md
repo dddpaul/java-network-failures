@@ -18,10 +18,10 @@ Add to /etc/sudoers:
 user ALL= NOPASSWD: /sbin/iptables
 ```
 
-Block all traffic to port 54321:
+Block inbound traffic to port 54321:
 
 ```java
-IpTables.drop( 54321 );
+IpTables.drop( Chain.INPUT, 54321 );
 ```
 
 ## Maven usage
@@ -43,7 +43,7 @@ Add following to your pom.xml:
     <dependency>
         <groupId>com.github.dddpaul</groupId>
         <artifactId>network-failures</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </dependency>
 </dependencies>
 ```
